@@ -15,111 +15,121 @@ type WorkExperience = {
   id: string
 }
 
+/*
 type BlogPost = {
   title: string
   description: string
   link: string
   uid: string
 }
+*/
 
 type SocialLink = {
   label: string
   link: string
 }
 
+type AcademicLink = {
+  name: string
+  description: string
+  link: string
+  id: string
+}
+
 export const PROJECTS: Project[] = [
   {
-    name: 'Motion Primitives Pro',
-    description:
-      'Advanced components and templates to craft beautiful websites.',
-    link: 'https://pro.motion-primitives.com/',
-    video:
-      'https://res.cloudinary.com/read-cv/video/upload/t_v_b/v1/1/profileItems/W2azTw5BVbMXfj7F53G92hMVIn32/newProfileItem/d898be8a-7037-4c71-af0c-8997239b050d.mp4?_a=DATAdtAAZAA0',
+    name: 'Spectral Recovery of a Planted Clique',
+    description: 'Can one find a planted clique in a network? This project gives an empirical performance study into an algorithm of Alon et Al (1998)',
+    link: '/projects/planted-clique',
+    video: '/videos/Graph_Cycling_Animation.mp4',
     id: 'project1',
   },
   {
-    name: 'Motion Primitives',
-    description: 'UI kit to make beautiful, animated interfaces.',
-    link: 'https://motion-primitives.com/',
-    video:
-      'https://res.cloudinary.com/read-cv/video/upload/t_v_b/v1/1/profileItems/W2azTw5BVbMXfj7F53G92hMVIn32/XSfIvT7BUWbPRXhrbLed/ee6871c9-8400-49d2-8be9-e32675eabf7e.mp4?_a=DATAdtAAZAA0',
+    name: 'Project 2',
+    description: 'Description 2',
+    link: '/projects/projects-2',
+    video: '/videos/project2.mp4',
     id: 'project2',
+  },
+  /*
+  {
+    name: 'Project 3',
+    description: 'Description 3',
+    link: '/projects/project-3',
+    video: '/videos/project3.mp4',
+    id: 'project3',
+  },
+  {
+    name: 'Project 3',
+    description: 'Description 3',
+    link: '/projects/project-3',
+    video: '/videos/project3.mp4',
+    id: 'project3',
+  },
+  */
+]
+
+export const ACADEMIC_LINKS: AcademicLink[] = [
+  {
+    name: 'Research',
+    description: 'Research interests, talks, seminars, and academic projects.',
+    link: '/research',
+    id: 'academic1',
+  },
+  {
+    name: 'Teaching and Tutoring',
+    description: "Here you'll find my teaching CV. Students interested in my tutoring services can find resources here as well.",
+    link: '/teaching',
+    id: 'academic2',
   },
 ]
 
 export const WORK_EXPERIENCE: WorkExperience[] = [
   {
-    company: 'Reglazed Studio',
-    title: 'CEO',
-    start: '2024',
+    company: 'Texas A&M University: Advised by Grigoris Paouris',
+    title: 'Math Ph.D. Student',
+    start: ' 08 2024',
     end: 'Present',
-    link: 'https://ibelick.com',
+    link: 'https://sites.google.com/tamu.edu/grigoris-paouris/',
     id: 'work1',
   },
   {
-    company: 'Freelance',
-    title: 'Design Engineer',
-    start: '2022',
-    end: '2024',
-    link: 'https://ibelick.com',
-    id: 'work2',
+    company: 'Erdős Institute',
+    title: 'Data Science Student',
+    start: '05 2024',
+    end: '08 -2024',
+    link: '',
+    id: 'https://0ada4d8c-c79a-4c34-ac13-e0af292bbc99.filesusr.com/ugd/a3186f_eef58139b3a64035ba79ba399a3f75c3.pdf',
   },
   {
-    company: 'Freelance',
-    title: 'Front-end Developer',
-    start: '2017',
-    end: 'Present',
-    link: 'https://ibelick.com',
+    company: 'University of Illinois at Chicago',
+    title: 'Graduate Study in Mathematical Computer Science',
+    start: '08 2023',
+    end: '07 2024',
+    link: 'https://mscs.uic.edu/',
     id: 'work3',
   },
-]
-
-export const BLOG_POSTS: BlogPost[] = [
-  {
-    title: 'Exploring the Intersection of Design, AI, and Design Engineering',
-    description: 'How AI is changing the way we design',
-    link: '/blog/exploring-the-intersection-of-design-ai-and-design-engineering',
-    uid: 'blog-1',
+   {
+    company: 'Mississippi State University',
+    title: 'My Alma Mater',
+    start: '08 2019',
+    end: '05 2023',
+    link: 'https://w.msstate.edu/msu/students-lists/?list=3&semester=1&year=2023&state=all&county=all&sort=name',
+    id: 'work4',
   },
-  {
-    title: 'Why I left my job to start my own company',
-    description:
-      'A deep dive into my decision to leave my job and start my own company',
-    link: '/blog/exploring-the-intersection-of-design-ai-and-design-engineering',
-    uid: 'blog-2',
-  },
-  {
-    title: 'What I learned from my first year of freelancing',
-    description:
-      'A look back at my first year of freelancing and what I learned',
-    link: '/blog/exploring-the-intersection-of-design-ai-and-design-engineering',
-    uid: 'blog-3',
-  },
-  {
-    title: 'How to Export Metadata from MDX for Next.js SEO',
-    description: 'A guide on exporting metadata from MDX files to leverage Next.js SEO features.',
-    link: '/blog/example-mdx-metadata',
-    uid: 'blog-4',
+     {
+    company: 'Budapest Semesters in Mathematics',
+    title: 'Study Abroad',
+    start: '05 2022',
+    end: '08 2022',
+    link: 'https://budapestsemesters.com/',
+    id: 'work5',
   },
 ]
 
 export const SOCIAL_LINKS: SocialLink[] = [
   {
     label: 'Github',
-    link: 'https://github.com/ibelick',
-  },
-  {
-    label: 'Twitter',
-    link: 'https://twitter.com/ibelick',
-  },
-  {
-    label: 'LinkedIn',
-    link: 'https://www.linkedin.com/in/ibelick',
-  },
-  {
-    label: 'Instagram',
-    link: 'https://www.instagram.com/ibelick',
+    link: 'https://github.com/RandomSpectra',
   },
 ]
-
-export const EMAIL = 'your@email.com'
