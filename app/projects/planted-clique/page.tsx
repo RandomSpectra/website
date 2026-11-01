@@ -134,7 +134,7 @@ export default function PlantedCliquePage() {
           One can see a clear improvement in performance as <InlineMath math="n"/> grows:
         </p>
         <Image
-         src="/images/planted-clique-recovery-success.png"
+         src="/Images/Success_Rate.png"
          alt="Success rate vs n"
          width={1000}
          height={600}
