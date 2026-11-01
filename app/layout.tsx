@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     canonical: '/',
   },
   title: {
-    default: 'D.K. Gill | Mathematics, Probability & Computation',
+    default: 'D.K. Gill | Mathematics & Probability',
     template: '%s | D.K. Gill',
   },
   description: 'D.K. Gill is a mathematics Ph.D. student at Texas A&M University working in high-dimensional probability and random matrix theory, with interests in computational and applied mathematics.',
