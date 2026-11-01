@@ -21,10 +21,10 @@ export const metadata: Metadata = {
     canonical: '/',
   },
   title: {
-    default: 'D.K. Gill | Mathematics & Probability',
-    template: '%s | D.K. Gill',
+    default: 'D.K.G. | Mathematics & Probability',
+    template: '%s | D.K.G.',
   },
-  description: 'D.K. Gill is a mathematics Ph.D. student at Texas A&M University working in high-dimensional probability and random matrix theory, with interests in computational and applied mathematics.',
+  description: 'D.K.G. is a mathematics Ph.D. student at Texas A&M University working in high-dimensional probability and random matrix theory, with interests in computational and applied mathematics.',
 }
 
 const geist = Geist({
