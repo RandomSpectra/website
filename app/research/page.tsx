@@ -10,9 +10,6 @@ const minForb =
 const doubleThresholdDefinition =
   String.raw`G \in \mathcal{C} \iff G \text{ contains no induced subgraph from } \mathcal{F}`
 
-const concentrationBound =
-  String.raw`\sum_{i=1}^{n} X_i \leq C \sqrt{n \log n}`
-
 export default function ResearchPage() {
   return (
     <main className="space-y-20">
@@ -81,24 +78,6 @@ export default function ResearchPage() {
 
           <p>
             where <InlineMath math={String.raw`\mathcal{F}`} /> is the minimal obstruction family.
-          </p>
-        </div>
-      </section>
-
-      <section className="space-y-5">
-        <h2 className="text-2xl font-medium">
-          Probabilistic and Analytical Bounds
-        </h2>
-
-        <div className="space-y-4 text-zinc-600 dark:text-zinc-400">
-          <p>
-            Work on concentration inequalities and random matrix theory yields bounds of the form:
-          </p>
-
-          <BlockMath math={concentrationBound} />
-
-          <p>
-            These arise from subgaussian comparison techniques and high-dimensional probability.
           </p>
         </div>
       </section>
