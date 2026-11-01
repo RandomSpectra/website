@@ -29,21 +29,20 @@ export function CliqueGraph() {
         <circle cx="210" cy="160" r="180" fill="url(#graph-glow)" />
         {edges.map(([a,b],i) => {
           const active = clique.includes(a) && clique.includes(b)
-          return <line key={i} x1={nodes[a][0]} y1={nodes[a][1]} x2={nodes[b][0]} y2={nodes[b][1]} stroke={active ? '#73d9cf' : '#62819b'} strokeWidth={active ? 1.65 : .75} opacity={active ? .8 : .24}>
-            {active && <animate attributeName="opacity" values=".18;.95;.18" dur="4s" begin={`${(i%8)*.2}s`} repeatCount="indefinite" />}
+          return <line key={i} x1={nodes[a][0]} y1={nodes[a][1]} x2={nodes[b][0]} y2={nodes[b][1]} stroke={active ? '#b86aff' : '#62819b'} strokeWidth={active ? 1.8 : .85} opacity={active ? .85 : .12}>
+            <animate attributeName="opacity" values={active ? ".65;1;.65" : "0;.55;0;0"} dur={active ? "4s" : `${2.1 + ((i * 7) % 15) / 5}s`} begin={`-${((i * 11) % 23) / 5}s`} repeatCount="indefinite" />
           </line>
         })}
         {nodes.map(([x,y],i) => {
           const active=clique.includes(i)
           return <g key={i}>
-            {active && <circle cx={x} cy={y} r="11" fill="#62dfd2" opacity=".3" filter="url(#node-glow)" />}
-            <circle cx={x} cy={y} r={active ? 4.5 : 2.8} fill={active ? '#a0fff0' : '#9cb6ca'} opacity={active ? 1 : .8}>
+            {active && <circle cx={x} cy={y} r="11" fill="#b86aff" opacity=".3" filter="url(#node-glow)" />}
+            <circle cx={x} cy={y} r={active ? 4.5 : 2.8} fill={active ? '#efc7ff' : '#9cb6ff'} opacity={active ? 1 : .8}>
               <animate attributeName="r" values={active ? "4;5.8;4" : "2.6;3.1;2.6"} dur={active ? "3s" : "6s"} begin={`${i*.13}s`} repeatCount="indefinite" />
             </circle>
           </g>
         })}
       </svg>
-      <div className="pointer-events-none absolute bottom-3 left-4 text-[11px] tracking-[.16em] text-teal-100/70">PLANTED CLIQUE · SPECTRAL RECOVERY</div>
     </div>
   )
 }
