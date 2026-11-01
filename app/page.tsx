@@ -142,7 +142,7 @@ export default function Personal() {
         transition={TRANSITION_SECTION}
       >
         <div className="flex-1">
-          <h1 className="mb-3 text-3xl font-semibold tracking-tight text-zinc-900 dark:text-zinc-50">D.K. Gill</h1>
+          <h1 className="mb-3 text-3xl font-semibold tracking-tight text-zinc-900 dark:text-zinc-50">D.K.G.</h1>
           <p className="mb-4 text-sm text-zinc-500 dark:text-zinc-400">Ph.D. Student in Mathematics · Texas A&amp;M University</p>
           <p className="text-zinc-600 dark:text-zinc-400">I am a mathematician working in high-dimensional probability and random matrix theory. My interests span theoretical mathematics, computational methods, and applications of probability and statistics to real-world problems.</p>
         </div>
