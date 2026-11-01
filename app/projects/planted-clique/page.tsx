@@ -134,7 +134,7 @@ export default function PlantedCliquePage() {
           One can see a clear improvement in performance as <InlineMath math="n"/> grows:
         </p>
         <Image
-         src="/images/Success_Rate.png"
+         src="/Images/Success_Rate.png"
          alt="Success rate vs n"
          width={1000}
          height={600}
@@ -153,7 +153,7 @@ export default function PlantedCliquePage() {
 
       <section className="space-y-4">
         <a
-          href="https://github.com/yourusername/your-repo"
+          href="https://github.com/RandomSpectra/Spectral_Recovery_of_Planted_Clique"
           className="inline-block underline text-zinc-200"
           target="_blank"
           rel="noopener noreferrer"

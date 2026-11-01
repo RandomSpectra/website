@@ -39,15 +39,15 @@ type AcademicLink = {
 export const PROJECTS: Project[] = [
   {
     name: 'Spectral Recovery of a Planted Clique',
-    description: 'Can one find a planted clique in a network? An empirical study of the algorithm of Alon et al. (1998).',
+    description: 'Can one find a planted clique in a network? An empirical study of an algorithm of Alon et al. (1998).',
     link: '/projects/planted-clique',
     video: '/videos/Graph_Cycling_Animation.mp4',
     id: 'project1',
   },
   {
     name: 'Stock Price Forecasting',
-    description: 'Comparing LSTM neural networks, sliding-window linear regression, and a naïve baseline using time-series cross-validation. A collaborative Erdős Institute project.',
-    link: 'https://github.com/Ajay-Aryan/Stock_Price_Prediction',
+    description: 'We present a comparison of three distinct models for one-day-ahead stock closing price prediction using historical price data: an LSTM neural network, sliding-window linear regression, and a naïve baseline. Models are evaluated using time-series cross-validation.',
+    link: 'https://www.erdosinstitute.org/certificates/may-summer-2024/data-science-boot-camp/deven-gill/bef469d2-2d9f-4644-9cc3-2874a5b0118c',
     id: 'project2',
   },
   /*
