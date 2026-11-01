@@ -4,6 +4,7 @@ import type { ReactNode } from 'react'
 import { motion } from 'motion/react'
 import { XIcon } from 'lucide-react'
 import Link from 'next/link'
+import Image from 'next/image'
 
 import { Spotlight } from '@/components/ui/spotlight'
 import { Magnetic } from '@/components/ui/magnetic'
@@ -158,7 +159,7 @@ export default function Personal() {
           {PROJECTS.map((project) => (
             <div key={project.name} className="space-y-2">
               <div className="relative rounded-2xl bg-zinc-50/40 p-1 ring-1 ring-zinc-200/50 ring-inset dark:bg-zinc-950/40 dark:ring-zinc-800/50">
-                {project.id === 'project1' ? <CliqueGraph /> : project.video ? <ProjectVideo src={project.video} /> : <div className="flex aspect-video items-center justify-center rounded-xl bg-zinc-100 text-center text-sm text-zinc-500 dark:bg-zinc-900 dark:text-zinc-400">Time-series forecasting and model comparison</div>}
+                {project.id === 'project1' ? <CliqueGraph /> : project.id === 'project2' ? <Image src="/images/LSTM-Predictions-dark-theme.png" alt="LSTM predictions compared with observed stock closing prices" width={1600} height={900} className="aspect-video w-full rounded-xl object-contain" /> : project.video ? <ProjectVideo src={project.video} /> : <div className="flex aspect-video items-center justify-center rounded-xl bg-zinc-100 text-center text-sm text-zinc-500 dark:bg-zinc-900 dark:text-zinc-400">Time-series forecasting and model comparison</div>}
               </div>
 
               <div className="px-1">
