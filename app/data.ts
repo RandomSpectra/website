@@ -39,7 +39,7 @@ type AcademicLink = {
 export const PROJECTS: Project[] = [
   {
     name: 'Spectral Recovery of a Planted Clique',
-    description: 'Can one find a planted clique in a network? An empirical study of the algorithm of Alon et al. (1998).',
+    description: 'Can one find a planted clique in a network? An empirical study of an algorithm of Alon et al. (1998).',
     link: '/projects/planted-clique',
     video: '/videos/Graph_Cycling_Animation.mp4',
     id: 'project1',
