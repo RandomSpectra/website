@@ -2,7 +2,7 @@ type Project = {
   name: string
   description: string
   link: string
-  video: string
+  video?: string
   id: string
 }
 
@@ -39,16 +39,15 @@ type AcademicLink = {
 export const PROJECTS: Project[] = [
   {
     name: 'Spectral Recovery of a Planted Clique',
-    description: 'Can one find a planted clique in a network? This project gives an empirical performance study into an algorithm of Alon et Al (1998)',
+    description: 'Can one find a planted clique in a network? An empirical study of the algorithm of Alon et al. (1998).',
     link: '/projects/planted-clique',
     video: '/videos/Graph_Cycling_Animation.mp4',
     id: 'project1',
   },
   {
-    name: 'Project 2',
-    description: 'Description 2',
-    link: '/projects/projects-2',
-    video: '/videos/project2.mp4',
+    name: 'Stock Price Forecasting',
+    description: 'Comparing LSTM neural networks, sliding-window linear regression, and a naïve baseline using time-series cross-validation. A collaborative Erdős Institute project.',
+    link: 'https://github.com/Ajay-Aryan/Stock_Price_Prediction',
     id: 'project2',
   },
   /*

@@ -7,7 +7,7 @@ export function Header() {
     <header className="mb-8 flex items-center justify-between">
       <div>
         <Link href="/" className="font-medium text-black dark:text-white">
-          About Me
+          D.K. Gill
         </Link>
         <TextEffect
           as="p"
@@ -16,7 +16,7 @@ export function Header() {
           className="text-zinc-600 dark:text-zinc-500"
           delay={0.5}
         >
-          I'm a mathematician with technical interests in data science, optimization, and mathematical modeling.
+          Mathematics · Probability
         </TextEffect>
       </div>
     </header>

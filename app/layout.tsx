@@ -16,15 +16,15 @@ export const viewport: Viewport = {
 }
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://nim-fawn.vercel.app/'),
+  metadataBase: new URL('https://website-swart-ten-16.vercel.app/'),
   alternates: {
     canonical: '/',
   },
   title: {
-    default: '',
-    template: '',
+    default: 'D.K. Gill | Mathematics & Probability',
+    template: '%s | D.K. Gill',
   },
-  description: '',
+  description: 'D.K. Gill is a mathematics Ph.D. student at Texas A&M University working in high-dimensional probability and random matrix theory, with interests in computational and applied mathematics.',
 }
 
 const geist = Geist({
