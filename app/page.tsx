@@ -7,6 +7,7 @@ import Link from 'next/link'
 
 import { Spotlight } from '@/components/ui/spotlight'
 import { Magnetic } from '@/components/ui/magnetic'
+import { CliqueGraph } from '@/components/clique-graph'
 import {
   MorphingDialog,
   MorphingDialogTrigger,
@@ -157,7 +158,7 @@ export default function Personal() {
           {PROJECTS.map((project) => (
             <div key={project.name} className="space-y-2">
               <div className="relative rounded-2xl bg-zinc-50/40 p-1 ring-1 ring-zinc-200/50 ring-inset dark:bg-zinc-950/40 dark:ring-zinc-800/50">
-                {project.video ? <ProjectVideo src={project.video} /> : <div className="flex aspect-video items-center justify-center rounded-xl bg-zinc-100 text-center text-sm text-zinc-500 dark:bg-zinc-900 dark:text-zinc-400">Time-series forecasting and model comparison</div>}
+                {project.id === 'project1' ? <CliqueGraph /> : project.video ? <ProjectVideo src={project.video} /> : <div className="flex aspect-video items-center justify-center rounded-xl bg-zinc-100 text-center text-sm text-zinc-500 dark:bg-zinc-900 dark:text-zinc-400">Time-series forecasting and model comparison</div>}
               </div>
 
               <div className="px-1">
