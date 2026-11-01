@@ -47,7 +47,7 @@ export const PROJECTS: Project[] = [
   {
     name: 'Stock Price Forecasting',
     description: 'Comparing LSTM neural networks, sliding-window linear regression, and a naïve baseline using time-series cross-validation. A collaborative Erdős Institute project.',
-    link: 'https://github.com/Ajay-Aryan/Stock_Price_Prediction',
+    link: 'https://www.erdosinstitute.org/certificates/may-summer-2024/data-science-boot-camp/deven-gill/bef469d2-2d9f-4644-9cc3-2874a5b0118c',
     id: 'project2',
   },
   /*
